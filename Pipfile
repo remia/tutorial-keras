@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+flake8 = "*"
+
+[packages]
+tensorflow = {path = "/tmp/tensorflow_pkg/tensorflow-1.13.1-cp37-cp37m-macosx_10_14_x86_64.whl"}
+keras = "*"
+numpy = "==1.16.1"
+matplotlib = "*"
+pyqt5 = "*"
+
+[requires]
+python_version = "3.7"
