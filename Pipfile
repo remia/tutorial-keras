@@ -13,6 +13,7 @@ keras = "*"
 numpy = "==1.16.1"
 matplotlib = "*"
 pyqt5 = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
