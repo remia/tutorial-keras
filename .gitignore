@@ -1,4 +1,5 @@
 .vscode/
 chapter5/dogs-vs-cats
 chapter5/cats_and_dogs_small
+.DS_Store
 Pipfile.lock
