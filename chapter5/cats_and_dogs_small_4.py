@@ -7,6 +7,7 @@ from keras import layers
 from keras import optimizers
 from keras.applications import VGG16
 from keras.preprocessing.image import ImageDataGenerator
+from keras.applications.imagenet_utils import preprocess_input
 
 
 base_dir = 'cats_and_dogs_small'
@@ -77,7 +78,8 @@ if __name__ == "__main__":
     conv_base.trainable = False
 
     train_datagen = ImageDataGenerator(
-        rescale=1./255,
+        # rescale=1./255,
+        preprocessing_function=preprocess_input,
         rotation_range=40,
         width_shift_range=0.2,
         height_shift_range=0.2,
@@ -87,7 +89,10 @@ if __name__ == "__main__":
         fill_mode='nearest'
     )
 
-    test_datagen = ImageDataGenerator(rescale=1./255)
+    test_datagen = ImageDataGenerator(
+        # rescale=1./255
+        preprocessing_function=preprocess_input
+    )
 
     train_generator = train_datagen.flow_from_directory(
         train_dir,
