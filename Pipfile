@@ -8,12 +8,14 @@ pylint = "*"
 flake8 = "*"
 
 [packages]
-tensorflow = {path = "/tmp/tensorflow_pkg/tensorflow-1.13.1-cp37-cp37m-macosx_10_14_x86_64.whl"}
+tensorflow = "*"
 keras = "*"
 numpy = "==1.16.1"
 matplotlib = "*"
 pyqt5 = "*"
 pillow = "*"
+jupyter = "*"
+opencv-python = "*"
 
 [requires]
 python_version = "3.7"
