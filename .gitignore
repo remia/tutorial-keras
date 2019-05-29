@@ -1,5 +1,11 @@
+# Files
+*.h5
+*.DS_Store
+Pipfile.lock
+
+# Folders
 .vscode/
 chapter5/dogs-vs-cats
 chapter5/cats_and_dogs_small
-.DS_Store
-Pipfile.lock
+chapter6/aclImdb
+chapter6/glove.6B
