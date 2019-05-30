@@ -2,6 +2,7 @@
 *.h5
 *.DS_Store
 Pipfile.lock
+jena_climate_*.csv
 
 # Folders
 .vscode/
