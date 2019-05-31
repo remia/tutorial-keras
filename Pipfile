@@ -16,6 +16,9 @@ pyqt5 = "*"
 pillow = "*"
 jupyter = "*"
 opencv-python = "*"
+pydot = "*"
+pydot-ng = "*"
+graphviz = "*"
 
 [requires]
 python_version = "3.7"
