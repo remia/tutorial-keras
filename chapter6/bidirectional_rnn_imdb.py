@@ -30,7 +30,7 @@ x_train = [x[::-1] for x in x_train]
 x_test = [x[::-1] for x in x_test]
 
 x_train = sequence.pad_sequences(x_train, maxlen=max_len)
-x_test = sequences.pad_sequences(x_test, maxlen=max_len)
+x_test = sequence.pad_sequences(x_test, maxlen=max_len)
 
 model = Sequential()
 model.add(layers.Embedding(max_features, 128))
