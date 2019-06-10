@@ -159,3 +159,7 @@ for i in range(iterations):
     print('Image saved as', fname)
     end_time = time.time()
     print('Iteration %d completed in %ds' % (i, end_time - start_time))
+
+#%%
+from IPython.display import Image
+Image(filename='my_result_at_iteration_19.png')
